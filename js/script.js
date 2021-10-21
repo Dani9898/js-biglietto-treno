@@ -5,7 +5,7 @@ let elemento = document.getElementById("my-id");
 // chiediamo all'utente il n di km
 let nKm = parseInt(prompt("Ciao, inserisci il numero di chilometri che vuoi fare:"));
 
-if (isNaN(nKm) == true) {
+if (isNaN(nKm)) {
     nKm = parseInt(prompt("Per favore inserisci un valore numerico corretto"));
 }
 
@@ -14,7 +14,7 @@ console.log(nKm);
 // chiediamo all'utente la sua età
 let età = parseInt(prompt("Quanti anni hai?"));
 
-if (isNaN(età) == true) {
+if (isNaN(età)) {
     età = parseInt(prompt("Per favore inserisci un valore numerico corretto"));
 }
 
@@ -22,10 +22,9 @@ console.log(età);
 
 // calcoliamo il prezzo del biglietto
 const prezzo1Km = 0.21;
-
 let prezzoBiglietto = nKm * prezzo1Km;
 const sconto20 = 0.8;
-const sconto40 = 0.6
+const sconto40 = 0.6;
 if (età < 18) {
     prezzoBiglietto = prezzoBiglietto * sconto20;
 } else if (età > 65) {
