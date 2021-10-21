@@ -22,12 +22,14 @@ console.log(età);
 
 // calcoliamo il prezzo del biglietto
 const prezzo1Km = 0.21;
-let prezzoBiglietto = nKm * prezzo1Km;
 
+let prezzoBiglietto = nKm * prezzo1Km;
+const sconto20 = 0.8;
+const sconto40 = 0.6
 if (età < 18) {
-    prezzoBiglietto = prezzoBiglietto * 0.8;
+    prezzoBiglietto = prezzoBiglietto * sconto20;
 } else if (età > 65) {
-    prezzoBiglietto = prezzoBiglietto * 0.6;
+    prezzoBiglietto = prezzoBiglietto * sconto40;
 }
 
 console.log(prezzoBiglietto);
